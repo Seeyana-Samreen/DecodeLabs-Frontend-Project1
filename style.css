@@ -1,0 +1,504 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+
+body{
+
+font-family:"Poppins",sans-serif;
+
+background:#f6efe6;
+
+color:#3b3028;
+
+}
+
+h1,h2,h3{
+font-family:"Playfair Display",serif;  
+}
+
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 80px;
+
+background:#2d211b;
+
+color:#d6a84f;
+
+position:sticky;
+
+top:0;
+
+z-index:10;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+nav a{
+
+color:#f5ede2;
+
+text-decoration:none;
+
+margin-left:35px;
+
+font-family:"Poppins",sans-serif;
+
+font-size:15px;
+
+transition:0.3s;
+
+}
+
+
+nav a:hover{
+    color:#d6a84f;
+}
+
+
+nav h2{
+    color:#d6a84f;
+    
+    font-family:"Playfair Display",serif;
+    
+    letter-spacing:1px;
+}
+
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:100px 100px;
+
+min-height:90vh;
+
+background:radial-gradient(circle at top left, #fffaf4, #f6efe6);
+
+}
+
+
+
+.hero-text{
+
+width:50%;
+
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:70px;
+
+line-height: 1.1;
+
+margin:20px 0;
+
+}
+
+
+
+.hero span{
+
+color:#b8893b;
+
+}
+
+
+
+.hero h3{
+
+letter-spacing:5px;
+
+margin:20px 0;
+
+}
+
+
+
+.hero p{
+
+    margin:auto;
+
+font-size:18px;
+
+line-height:1.8;
+
+max-width: 500px;
+
+color: #6b5a4c;
+
+}
+
+
+
+button{
+
+margin-top:35px;
+
+padding:15px 35px;
+
+background:#b8893b;
+
+border:none;
+
+border-radius:30px;
+
+color:white;
+
+font-size: 16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+    transform:translateY(-3px);
+
+}
+
+
+.hero a{
+    text-decoration:none;
+}
+
+
+
+.outline{
+
+background:transparent;
+
+border:1px solid #b8893b;
+
+color:#b8893b;
+
+margin-left:15px;
+
+}
+
+
+
+
+.image-box img{
+
+width:350px;
+
+height:420px;
+
+object-fit:cover;
+
+object-position: center 50%;
+
+border-radius:50px;
+
+border:3px solid #b8893b;
+
+transition:0.4s;
+
+}
+
+
+.image-box img:hover{
+    
+    transform:scale(1.03);
+
+}
+
+
+
+section{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+section h2{
+    font-size:40px;
+   
+    margin-bottom:30px;
+   
+    color:#8b5e2b;
+}
+
+
+
+
+.box{
+
+background:#e6dbcf;
+
+margin:30px;
+
+border-radius:30px;
+
+}
+
+
+
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+
+
+
+.cards div{
+
+background:#fffaf4;
+
+padding:35px 25px;
+
+width:200px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+border:1px solid #e2c79d;
+
+transition:0.3s;
+
+}
+
+.cards div:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+.cards h3{
+
+    color:#8b5e2b;
+
+    margin-bottom:15px;
+
+}
+
+
+.project{
+
+width:300px!important;
+
+background:#fffaf4;
+
+padding:35px;
+
+border-radius:25px;
+
+border:1px solid #e2c79d;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+}
+
+.project:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
+}
+
+.project h3{
+
+    color:#8b5e2b;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+} 
+
+
+
+.contact{
+
+background:#efe2d3;
+
+}
+
+
+
+
+footer{
+
+background:#2d211b;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px){
+
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+padding:20px;
+
+}
+
+
+nav div{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+.hero{
+
+flex-direction:column;
+
+padding:50px 20px;
+
+text-align:center;
+
+}
+
+
+.hero-text{
+
+width:100%;
+
+}
+
+
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+
+
+.image-box img{
+
+width:280px;
+
+height:350px;
+
+}
+
+
+
+section{
+
+padding:40px 20px;
+
+}
+
+
+
+.cards{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+.project{
+
+width:90%!important;
+
+}
+
+
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+.hero-text{
+
+animation:fadeUp 1s ease;
+
+}
+
+
+.image-box{
+
+animation:fadeUp 1.2s ease;
+
+}
